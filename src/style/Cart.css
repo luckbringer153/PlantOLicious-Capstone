@@ -1,0 +1,73 @@
+.entireCartBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartBucket {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: center;
+}
+
+.eachCartItem {
+  display: flex;
+  background-color: rgb(144, 183, 152);
+  box-shadow: black 3px 3px 5px;
+  width: 400px;
+  height: 210px;
+  justify-content: center;
+  padding: 5px;
+}
+
+.titleAndPrice {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+}
+
+.priceWithButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* move picture and +/- buttons into a different bucket alongside the .eachCartItem one; make them side-by-side and/or have +/- buttons be near quantity number; enlarge price to be as big as the title and quantity numbers */
+
+.eachProductPicture {
+  height: 190px;
+  width: 50%;
+  border: rgb(255, 95, 159) 7px solid;
+  box-shadow: rgb(0, 75, 0) 5px 5px 5px;
+}
+
+.addSubtractItemsButton {
+  width: 25px;
+  height: 25px;
+}
+
+.totalPrice {
+  padding: 5px;
+  background-color: white;
+}
+
+.addSubtractItemsButton,
+.completePurchaseButton {
+  font-size: 18px;
+  color: rgb(204, 0, 81);
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  box-shadow: black 2px 2px 2px;
+}
+
+.completePurchaseButton {
+  padding: 5px;
+}
+
+.addSubtractItemsButton:hover,
+.completePurchaseButton:hover {
+  cursor: pointer;
+  color: rgb(255, 95, 159);
+}

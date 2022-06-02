@@ -1,0 +1,63 @@
+.homeBody {
+  display: flex;
+  justify-content: center;
+}
+
+.homeBlurb {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-items: center;
+  border-right: 4px black dotted;
+  margin-right: 30px;
+}
+
+.homeBlurbTitle,
+.homeBlurbBody {
+  margin: 0px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.homePicContainer {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.snakePlantPic {
+  border: rgb(255, 95, 159) 7px solid;
+  box-shadow: rgb(0, 75, 0) 5px 5px 5px;
+  height: 100%;
+  width: 400px;
+  margin-top: 10px;
+}
+
+.textBottomLeft {
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+  background-color: white;
+  padding: 4px;
+  box-shadow: black 2px 2px 5px;
+  font-size: 17px;
+}
+
+.linkHomeToAllProducts {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(170, 0, 68);
+  padding: 20px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  opacity: 0.7;
+}
+
+.linkHomeToAllProducts:hover {
+  color: rgb(255, 95, 159);
+  opacity: 1;
+}
+
+.featuredPlants {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,55 @@
+.profileBlock {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hello {
+  margin: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  align-content: center;
+  background-color: rgb(255, 95, 159);
+  padding: 0.3rem;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.spacing {
+  padding: 1rem;
+}
+
+th,
+td {
+  padding: 0.3rem;
+}
+
+.eachComponent {
+  text-decoration: underline;
+}
+
+.listOfAllUsers {
+  width: 30%;
+  border-style: double;
+  background-color: rgb(144, 183, 152);
+  box-shadow: black 3px 3px 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.previousOrders {
+  width: 65%;
+  border-style: double;
+  background-color: rgb(144, 183, 152);
+  box-shadow: black 3px 3px 5px;
+  padding: 1rem;
+}
+
+.separateUsersAndOrders {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 1rem;
+}

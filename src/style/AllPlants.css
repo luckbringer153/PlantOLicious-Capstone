@@ -1,0 +1,189 @@
+.linkToAddingProduct {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  margin-left: 200px;
+  font-weight: bold;
+  background-color: rgb(198, 241, 216);
+  border: black 2px solid;
+  opacity: 90%;
+}
+
+.linkToAddingProduct:hover {
+  color: rgb(88, 88, 88);
+}
+
+.allPlantsBlock {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.eachPlantBlock {
+  background-color: rgb(144, 183, 152);
+  box-shadow: black 3px 3px 5px;
+  width: 500px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.eachPlantBlock:hover {
+  background-color: rgb(167, 199, 173);
+  cursor: pointer;
+}
+
+.plantPicForSale {
+  height: 300px;
+  width: 75%;
+  border: rgb(255, 95, 159) 7px solid;
+  box-shadow: rgb(0, 75, 0) 5px 5px 5px;
+  margin-bottom: 10px;
+}
+
+/* affects all p tags */
+p {
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.eachPlantInfo {
+  text-decoration: none;
+  color: black;
+}
+
+.eachPlantTitle {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background-color: white;
+  padding: 4px;
+  box-shadow: black 2px 2px 5px;
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.buttonAddToCartFromAllProducts {
+  margin: 10px;
+  font-size: 18px;
+  color: rgb(204, 0, 81);
+  border-radius: 5px;
+
+  /* START OF ANIMATION */
+  position: relative;
+  transition: 0.2s;
+}
+
+span.ripple {
+  background-color: rgb(255, 95, 159);
+  border-radius: 50%;
+  position: absolute;
+  transform: scale(0);
+  animation: ripple 0.35s linear forwards;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(0.45);
+    opacity: 0;
+  }
+}
+/* END OF ANIMATION */
+
+.buttonAddToCartFromAllProducts:hover {
+  cursor: pointer;
+  color: rgb(255, 95, 159);
+}
+
+#toTopButton {
+  display: none; /*default*/
+  position: fixed;
+  bottom: 105px;
+  right: 30px;
+  z-index: 98;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 95, 159);
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  height: 60px;
+}
+
+#toTopButton:hover {
+  cursor: pointer;
+  background-color: rgb(242, 133, 177);
+  box-shadow: black 2px 2px 5px;
+}
+
+.cartIconBucket {
+  position: relative;
+}
+
+#cartIndicatorAndButton {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 98;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  height: 90px;
+}
+
+#cartIndicatorAndButton:hover {
+  cursor: pointer;
+  background-color: rgb(255, 95, 159);
+  box-shadow: black 2px 2px 5px;
+}
+
+#numberInCart {
+  position: fixed;
+  vertical-align: top;
+  bottom: 60px;
+  right: 30px;
+  z-index: 99;
+  background-color: rgb(242, 133, 177);
+  padding: 4px;
+  box-shadow: black 2px 2px 5px;
+  font-size: 18px;
+}
+
+.linkToAddingToCart {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  font-weight: bold;
+  background-color: white;
+  border: black 2px solid;
+  opacity: 90%;
+}
+
+.linkToDeletingProduct {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  font-weight: bold;
+  background-color: rgb(198, 241, 216);
+  border: black 2px solid;
+  opacity: 90%;
+}
+
+.linkToEditingProduct {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  font-weight: bold;
+  background-color: rgb(198, 241, 216);
+  border: black 2px solid;
+  opacity: 90%;
+}

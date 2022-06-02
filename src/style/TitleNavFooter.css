@@ -1,0 +1,91 @@
+.logoDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.logoImage {
+  width: 100%;
+  height: 150px;
+}
+
+.logoText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-color: rgb(255, 255, 85);
+  box-shadow: black 5px 5px 5px;
+}
+
+.navigationBar {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 95, 159);
+  position: relative;
+  color: black;
+}
+
+.navLink,
+.logout {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.logout:hover {
+  cursor: pointer;
+}
+
+.navLink,
+.logout {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.navLink:after,
+.logout:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navLink:hover:after,
+.logout:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.footerText {
+  text-align: center;
+  /* margin: 50px; */
+  padding: 5px;
+  background-image: linear-gradient(rgb(92, 137, 92, 0), rgb(86, 128, 86));
+  font-style: italic;
+
+  /* sticks footer to bottom of page, but cannot adjust for a page that's shorter than your browser window */
+  display: flex;
+  justify-content: center;
+  flex: 1 0 auto;
+  flex-shrink: 0;
+}
+
+.copyrightLink {
+  text-decoration: none;
+  color: black;
+}
